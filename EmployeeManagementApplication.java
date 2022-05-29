@@ -24,10 +24,12 @@ public class EmployeeManagementApplication {
 	public CommandLineRunner loadDatabase(Employeerepository repository) {
 		return (args) -> {
 
-			repository.save(new Employee("Bhargavi", "Manager", 100000));
-			repository.save(new Employee("Vaishnavi", "HR", 50000));
-			repository.save(new Employee("KiranMayee", "Trainee", 25000));
-			repository.save(new Employee("Shruthi", "Programmer", 25000));
+			repository.save(new Employee("John", "Manager", 200000));
+			repository.save(new Employee("Meera", "Team LeadLead", 50000));
+			repository.save(new Employee("Dora", "HR", 20000));
+			repository.save(new Employee("Sofia", "Programmer", 45000));
+			repository.save(new Employee("Tara", "Traniee",35000));
+			
 
 			log.info("All Employees");
 			log.info("-------------------------------");
